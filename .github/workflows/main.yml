@@ -1,0 +1,28 @@
+name: first-pipeline
+on: 
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+jobs: 
+  first-job:
+    name: "my first job"
+    runs-on: ubuntu-latest
+    steps:
+      - name: "First action"
+        run: echo "Hello World !!!"
+      - name: "Second action"
+        run: 
+         echo "You have created your first workflow !!!"
+         echo "Congratulations !!!"
+      - name: "Script Python"
+        run:
+         variavel = "Hello World"
+         print(variavel)
+        shell: python
+  second-job:
+    name: "Environment NodeJS Installation"
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Verification of the current NodeJS version"
+        run: node --version
+ 
