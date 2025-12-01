@@ -1,4 +1,4 @@
-name: second-pipeline
+name: pipeline
 on: 
   push:
     branches: ["main"]
