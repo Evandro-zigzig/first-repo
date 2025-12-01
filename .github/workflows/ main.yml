@@ -4,7 +4,7 @@ on:
     branches: ["main"]
   workflow_dispatch:
 jobs:
-  primeiro-job:
+  first-job:
     name: "First Job"
     runs-on: ubuntu-latest
     steps:
@@ -14,3 +14,9 @@ jobs:
         run: |
           echo "You created the first workflow"
           echo "congrats !!!"
+  second-job:
+    name: "Installation of the NodeJS environment"
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Verification of the current NodeJS version"
+        run: node --version
