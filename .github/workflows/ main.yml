@@ -5,10 +5,10 @@ on:
   workflow_dispatch:
 jobs:
   primeiro-job:
-    name: "My first Job"
+    name: "First Job"
     runs-on: ubuntu-latest
     steps:
-      - name: "My first action"
+      - name: "First action"
         run: echo "Hello World !!!"
       - name: "Second action"  
         run: |
