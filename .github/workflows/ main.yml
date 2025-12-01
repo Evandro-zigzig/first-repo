@@ -23,7 +23,7 @@ jobs:
      # - name: "Definition of the version v25.2.1 of the NodeJS"  
      # - uses: actions/setup-node@v6.0.0
      #  with:
-      - name: Setup Node.js environment
+      - name: "Setup Node.js environment"
         uses: actions/setup-node@v6.0.0
         with:
           node-version: "25.2.1"
